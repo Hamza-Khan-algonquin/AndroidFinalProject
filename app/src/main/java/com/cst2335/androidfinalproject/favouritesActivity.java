@@ -94,7 +94,7 @@ public class favouritesActivity extends AppCompatActivity {
             Bundle dataToPass = new Bundle();
             dataToPass.putString("item", fruits_list.get(position));
 
-            Toast.makeText(favouritesActivity.this, getResources().getString(R.string.favourites_toast), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(favouritesActivity.this, getResources().getString(R.string.favourites_toast), Toast.LENGTH_SHORT).show();
 
 
 
