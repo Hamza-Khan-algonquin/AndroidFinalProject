@@ -10,21 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidFinalProject">
         <activity
-            android:name=".favouritesActivity"
+            android:name=".Search_result"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-
-        <!--<activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>-->
+        <meta-data
+            android:name="android.app.res.xml.searchable"
+            android:resource="@xml/searchable" />
     </application>
 
 </manifest>
