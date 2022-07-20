@@ -10,15 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Here is the Recipe name"
-        android:textSize="25dp"
         android:textColor="@color/black"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.244" />
-
 
 
     <ImageView
@@ -33,37 +32,61 @@
         tools:srcCompat="@drawable/cookingImageFinal" />
 
     <TextView
-        android:layout_width="387dp"
-        android:layout_height="199dp"
+        android:layout_width="385dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="299dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="266dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="59dp"
         android:layout_height="50dp"
-        app:srcCompat="@android:drawable/btn_star"
-        tools:layout_editor_absoluteX="339dp"
-        tools:layout_editor_absoluteY="168dp" />
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="513dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star" />
 
     <TextView
         android:id="@+id/CategoryHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="486dp"
         android:text="Category: "
         android:textAppearance="bold"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/CategoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="193dp"
+        android:layout_marginBottom="486dp"
         android:text="Category name here"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
