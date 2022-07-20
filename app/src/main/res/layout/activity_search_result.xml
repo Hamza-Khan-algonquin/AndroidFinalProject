@@ -10,14 +10,15 @@
     <View
         android:id="@+id/Top_View"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="120dp"
         android:layout_marginBottom="552dp"
-        android:background="@color/purple_500"
+        android:background="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </View>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></View>
 
     <TextView
         android:id="@+id/tvAppName"
@@ -34,16 +35,39 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="409dp"
-        android:layout_height="549dp"
+        android:id="@+id/list_view_SR"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar_SR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Top_View" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/toolbar_SR"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_view_SR">
+
+        <!--<ImageButton
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_outline_search_24"
+                />-->
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
