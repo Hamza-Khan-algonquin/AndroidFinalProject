@@ -41,7 +41,7 @@ public class FragmentRecipePage extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, FragmentRecipePageFragment.newInstance())
+      //          .replace(R.id.container, FragmentRecipePageFragment.newInstance())
                 .commitNow();
         }
     }
