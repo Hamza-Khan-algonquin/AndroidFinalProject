@@ -11,7 +11,5 @@ public class HomePage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // comment
-        // another comments
     }
 }
